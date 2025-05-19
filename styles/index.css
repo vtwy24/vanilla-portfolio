@@ -1,0 +1,17 @@
+
+.profile {
+  display: flex;
+  padding: 0 3rem;
+}
+
+.profile-statement {
+  align-content: center;
+  margin: 8rem 0 0 3rem;
+}
+
+.me-image {
+  width: auto;
+  height: 40rem;
+  margin: 0;
+}
+
