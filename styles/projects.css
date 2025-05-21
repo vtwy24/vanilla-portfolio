@@ -19,6 +19,12 @@
   box-shadow: 0.6rem 0.6rem 1.8rem rgba(0, 0, 0, 0.2);
 }
 
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .project-preview img {
   width: 100%;
   max-width: 18rem;
@@ -44,7 +50,7 @@
 
 @media (max-width: 480px) {
   .project-item {
-    margin: 4rem 1rem;
+    margin: 1rem 2rem;
   }
   .project-preview {
     width: 6rem;
@@ -57,7 +63,7 @@
 
 @media (479px < width < 769px) {
   .project-item {
-    margin: 4rem 0.5rem;
+    margin: 2rem 4rem;
   }
   .project-preview {
     width: 10rem;
@@ -70,7 +76,7 @@
 
 @media (768px < width < 1025px) {
   .project-item {
-    margin: 6rem 5rem;
+    margin: 3rem 6rem;
   }
   .project-preview {
     width: 8rem;
@@ -83,7 +89,7 @@
 
 @media (1024px < width < 1441px) {
   .project-item {
-    margin: 10rem 5rem;
+    margin: 3rem 5rem;
   }
   .project-preview {
     width: 12rem;
