@@ -19,3 +19,26 @@
   margin: 0;
 }
 
+@media (max-width: 480px) {
+  .about-me{
+    margin: 0;
+  }
+  .profile{
+    padding: 0;
+    /* flex-direction: column; */
+  }
+  .me-image{
+    height: 15rem;
+    width: auto;
+  }
+  .profile-statement{
+    margin: 5rem 0 0;
+    font-size: 2vw;
+  }
+}
+
+@media (479px < width < 769px) {}
+
+@media (768px < width < 1025px) {}
+
+@media (1024px < width < 1441px) {}

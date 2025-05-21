@@ -19,12 +19,6 @@
   font-size: 2em;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1em;
-}
-
 .nav-links a {
   text-decoration: none;
   color: white;
@@ -52,6 +46,16 @@
   font-family: 'Permanent Marker', cursive;
 }
 
+@media (min-width: 769px) {
+  .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  transition: all 0.3s ease-in-out;
+}
+
+}
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -73,8 +77,8 @@
 }
 @media (max-width: 480px) {
   .subtitle{
-    font-size: 5rem;
-    margin: -1rem 0 -3.5rem;
+    font-size: 4rem;
+    margin: 0 0 -3.5rem;
   }
 }
 @media (479px < width < 769px) {
