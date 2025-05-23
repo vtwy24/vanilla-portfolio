@@ -9,6 +9,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/src/favicon/favicon-16x16.png">
     <link rel="manifest" href="/src/favicon/site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/projects.css" />
     <script type="module" src="/scripts/main.js"></script>
@@ -18,31 +21,40 @@
 <body>
     <header>
         <nav class="navbar">
-            <span class="logo">V-ARCHIVES</span>
+            <a href="/index.html" class="title-link">
+                <span class="logo">V-ARCHIVES</span>
+            </a>
             <button class="menu-toggle" id="menu-toggle"> &#9776;</button>
             <ul class="nav-links" id="nav-links">
                 <li><a href="/index.html">About Me</a></li>
                 <li><a href="/projects.html">Projects</a></li>
                 <li><a href="/contact">Contact Me</a></li>
+                <li><button class="theme-toggle" id="theme-toggle">
+                    <span class="switch">
+                        <span class="knob">
+                            <i class="fa-solid fa-moon" id="theme-icon"></i>
+                        </span>
+                    </span>
+                </button></li>
             </ul>
         </nav>
     </header>
     <main>
         <h2 class="subtitle">Projects</h2>
         <a href="https://endearing-blancmange-7d9723.netlify.app/" class="project-link" target="_blank">
-        <div class="project-item">
-            <div class="project-preview">
-                <img src="/src/assets/kuromi-svg.png" alt="Kuromi SVG">
+            <div class="project-item">
+                <div class="project-preview">
+                    <img src="/src/assets/kuromi-svg.png" alt="Kuromi SVG">
+                </div>
+                <div class="project-description">
+                    <h2>Kuromi x Baku SVG</h2>
+                    <p>I created a SVG animation of the Sanrio character Kuromi using HTML and CSS.
+                        As it looked a bit plain at first with just Kuromi by herself, I added her
+                        companion Baku and skill images to fill the background.</p>
+                </div>
             </div>
-            <div class="project-description">
-                <h2>Kuromi x Baku SVG</h2>
-                <p>I created a SVG animation of the Sanrio character Kuromi using HTML and CSS.
-                    As it looked a bit plain at first with just Kuromi by herself, I added her
-                    companion Baku and skill images to fill the background.</p>
-            </div>
-        </div>
         </a>
-        <a href="https://exquisite-nougat-181ed3.netlify.app/" class="project-link" target="_blank" >
+        <a href="https://exquisite-nougat-181ed3.netlify.app/" class="project-link" target="_blank">
             <div class="project-item">
                 <div class="project-preview">
                     <img src="/src/assets/todo-app.png" alt="Todo App Screenshot">
@@ -53,7 +65,7 @@
                 </div>
             </div>
         </a>
-        <a href="https://idyllic-brigadeiros-f720fa.netlify.app/" class="project-link" target="_blank" >
+        <a href="https://idyllic-brigadeiros-f720fa.netlify.app/" class="project-link" target="_blank">
             <div class="project-item">
                 <div class="project-preview">
                     <img src="/src/assets/tictactoe.png" alt="Tictactoe screenshot">

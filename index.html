@@ -9,6 +9,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/src/favicon/favicon-16x16.png">
     <link rel="manifest" href="/src/favicon/site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/index.css" />
     <script type="module" src="/scripts/main.js"></script>
@@ -18,14 +21,23 @@
 <body>
     <header>
         <nav class="navbar">
-      <span class="logo">V-ARCHIVES</span>
-      <button class="menu-toggle" id="menu-toggle"> &#9776;</button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="/index.html">About Me</a></li>
+            <a href="/index.html" class="title-link">
+                <span class="logo">V-ARCHIVES</span>
+            </a>
+            <button class="menu-toggle" id="menu-toggle"> &#9776;</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/index.html">About Me</a></li>
                 <li><a href="/projects.html">Projects</a></li>
-        <li><a href="/contact">Contact Me</a></li>
-      </ul>
-    </nav>
+                <li><a href="/contact">Contact Me</a></li>
+                <li><button class="theme-toggle" id="theme-toggle">
+                    <span class="switch">
+                        <span class="knob">
+                            <i class="fa-solid fa-moon" id="theme-icon"></i>
+                        </span>
+                    </span>
+                </button></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <div class="about-me">
@@ -34,9 +46,12 @@
                 <img src="/src/assets/me.png" alt="Image of Me" class="me-image">
                 <div class="profile-statement">
                     <h3>A little bit about me...</h3>
-                    <p>Hey! Please call me Vee, a London-based developer with a big love for creativity and growing passion for
-                        coding. Right now, I'm still building my collection of projects, but I'm always eager to learn, experiment
-                        and impove my skills. Feel free to follow me on my journey of coding and explore my works in my Projects
+                    <p>Hey! Please call me Vee, a London-based developer with a big love for creativity and growing
+                        passion for
+                        coding. Right now, I'm still building my collection of projects, but I'm always eager to learn,
+                        experiment
+                        and impove my skills. Feel free to follow me on my journey of coding and explore my works in my
+                        Projects
                         section! </p>
                 </div>
             </div>
@@ -44,7 +59,7 @@
         <div class="contact-me" id="contact-me">
             <h2>Skills</h2>
             <h2>Contact Me</h2>
-            <form id="contact-form" ></form>
+            <form id="contact-form"></form>
         </div>
     </main>
     <footer></footer>

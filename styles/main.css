@@ -14,9 +14,20 @@
   align-items: center;
 }
 
+.title-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
 .logo {
   font-family: 'Permanent Marker', cursive;
   font-size: 2em;
+}
+
+li {
+  display: flex;
+  align-items: center;
 }
 
 .nav-links a {
@@ -38,6 +49,52 @@
   cursor: pointer;
 }
 
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em;
+}
+
+.switch {
+  width: 50px;
+  height: 26px;
+  background-color: #ffffff44;
+  border-radius: 50px;
+  position: relative;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.knob {
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+
+body.light-mode .knob {
+  transform: translateX(24px);
+}
+
 .subtitle {
   margin: -2rem 0 -10rem 0;
   font-size: 15rem;
@@ -48,12 +105,35 @@
 
 @media (min-width: 769px) {
   .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1em;
-  transition: all 0.3s ease-in-out;
-}
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    transition: all 0.3s ease-in-out;
+  }
 
+  .switch {
+    background-color: #ccc;
+    border-radius: 1rem;
+    padding: 0.25rem;
+    width: 3rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .knob {
+    background: white;
+    border-radius: 50%;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .theme-label {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -74,21 +154,33 @@
   .menu-toggle {
     display: block;
   }
+
+  .switch {
+    all: unset;
+  }
+
+  .knob {
+    all: unset;
+  }
+
+  .theme-label {
+    display: inline;
+  }
 }
 @media (max-width: 480px) {
-  .subtitle{
+  .subtitle {
     font-size: 4rem;
     margin: 0 0 -3.5rem;
   }
 }
 @media (479px < width < 769px) {
-  .subtitle{
+  .subtitle {
     font-size: 9rem;
     margin: -1rem 0 -6rem;
   }
 }
 @media (768px < width < 1025px) {
-  .subtitle{
+  .subtitle {
     font-size: 12rem;
     margin: -1rem 0 -8rem;
   }
