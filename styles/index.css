@@ -6,11 +6,13 @@
 .profile {
   display: flex;
   padding: 0 3rem;
+  margin: -15rem 0 0;
 }
 
 .profile-statement {
   align-content: center;
   margin: 8rem 0 0 3rem;
+  font-size: 1vw;
 }
 
 .me-image {
@@ -25,6 +27,7 @@
   }
   .profile{
     padding: 0;
+    margin: -4rem 0 0;
     /* flex-direction: column; */
   }
   .me-image{
@@ -37,8 +40,56 @@
   }
 }
 
-@media (479px < width < 769px) {}
+@media (479px < width < 770px) {
+.about-me{
+    margin: 0;
+  }
+  .profile{
+    padding: 0;
+    margin: -8rem 0 0;
+  }
+  .me-image{
+    height: 25rem;
+    width: auto;
+  }
+  .profile-statement{
+    margin: 9rem 0 0;
+    font-size: 2vw;
+  }
+}
 
-@media (768px < width < 1025px) {}
+@media (769px < width < 1025px) {
+  .about-me{
+    margin: 0;
+  }
+  .profile{
+    padding: 0;
+    margin: 0;
+  }
+  .me-image{
+    height: 28rem;
+    width: auto;
+  }
+  .profile-statement{
+    margin: 9rem 0 0;
+    font-size: 1.75vw;
+  }
+}
 
-@media (1024px < width < 1441px) {}
+@media (1024px < width < 1441px) {
+  .about-me{
+    margin: 0;
+  }
+  .profile{
+    padding: 0;
+    margin: -12rem 0 0;
+  }
+  .me-image{
+    height: 35rem;
+    width: auto;
+  }
+  .profile-statement{
+    margin: 15rem 0 0;
+    font-size: 1.5vw;
+  }
+}
