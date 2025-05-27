@@ -1,8 +1,9 @@
-.about-me{
+.about-me {
   justify-content: center;
   padding: 0 2rem;
   margin: 0 2rem;
 }
+
 .profile {
   display: flex;
   padding: 0 3rem;
@@ -21,74 +22,211 @@
   margin: 0;
 }
 
+.frontend-skills,
+.backend-skills,
+.other-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.frontend-skills li,
+.backend-skills li,
+.other-skills-list li {
+  flex: 0 1 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  height: 6rem;
+}
+
+.frontend-skills li:hover,
+.backend-skills li:hover,
+.other-skills-list li:hover {
+  transform: scale(1.05);
+}
+
+body.dark-mode .frontend-skills li,
+body.dark-mode .backend-skills li,
+body.dark-mode .other-skills-list li {
+  background-color: rgba(52, 52, 52, 0.942);
+}
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.skill-icon[data-skill='css'] {
+  background-image: url('/src/icons/css-black.png');
+}
+.skill-icon[data-skill='js'] {
+  background-image: url('/src/icons/js-black.png');
+}
+.skill-icon[data-skill='react'] {
+  background-image: url('/src/icons/react-black.png');
+}
+.skill-icon[data-skill='sass'] {
+  background-image: url('/src/icons/sass-black.png');
+}
+.skill-icon[data-skill='tailwind'] {
+  background-image: url('/src/icons/tailwind-black.png');
+}
+.skill-icon[data-skill='html'] {
+  background-image: url('/src/icons/html-black.png');
+}
+.skill-icon[data-skill='figma'] {
+  background-image: url('/src/icons/figma-black.png');
+}
+.skill-icon[data-skill='mui'] {
+  background-image: url('/src/icons/mui-black.png');
+}
+.skill-icon[data-skill='sql'] {
+  background-image: url('/src/icons/sql-black.png');
+}
+.skill-icon[data-skill='mongodb'] {
+  background-image: url('/src/icons/mongodb-black.png');
+}
+.skill-icon[data-skill='vscode'] {
+  background-image: url('/src/icons/vscode-black.png');
+}
+.skill-icon[data-skill='netlify'] {
+  background-image: url('/src/icons/netlify-black.png');
+}
+.skill-icon[data-skill='github'] {
+  background-image: url('/src/icons/github-black.png');
+}
+.skill-icon[data-skill='power-automate'] {
+  background-image: url('/src/icons/powerautomate-black.png');
+}
+
+body.dark-mode .skill-icon[data-skill='html'] {
+  background-image: url('/src/icons/html-white.png');
+}
+body.dark-mode .skill-icon[data-skill='css'] {
+  background-image: url('/src/icons/css-white.png');
+}
+body.dark-mode .skill-icon[data-skill='js'] {
+  background-image: url('/src/icons/js-white.png');
+}
+body.dark-mode .skill-icon[data-skill='react'] {
+  background-image: url('/src/icons/react-white.png');
+}
+body.dark-mode .skill-icon[data-skill='sass'] {
+  background-image: url('/src/icons/sass-white.png');
+}
+body.dark-mode .skill-icon[data-skill='tailwind'] {
+  background-image: url('/src/icons/tailwind-white.png');
+}
+body.dark-mode .skill-icon[data-skill='figma'] {
+  background-image: url('/src/icons/figma-white.png');
+}
+body.dark-mode .skill-icon[data-skill='mui'] {
+  background-image: url('/src/icons/mui-white.png');
+}
+body.dark-mode .skill-icon[data-skill='sql'] {
+  background-image: url('/src/icons/sql-white.png');
+}
+body.dark-mode .skill-icon[data-skill='mongodb'] {
+  background-image: url('/src/icons/mongodb-white.png');
+}
+body.dark-mode .skill-icon[data-skill='vscode'] {
+  background-image: url('/src/icons/vscode-white.png');
+}
+body.dark-mode .skill-icon[data-skill='netlify'] {
+  background-image: url('/src/icons/netlify-white.png');
+}
+body.dark-mode .skill-icon[data-skill='github'] {
+  background-image: url('/src/icons/github-white.png');
+}
+body.dark-mode .skill-icon[data-skill='power-automate'] {
+  background-image: url('/src/icons/powerautomate-white.png');
+}
+
 @media (max-width: 480px) {
-  .about-me{
+  .about-me {
     margin: 0;
   }
-  .profile{
+  .profile {
     padding: 0;
     margin: -4rem 0 0;
-    /* flex-direction: column; */
+    flex-direction: column;
   }
-  .me-image{
+  .me-image {
     height: 15rem;
     width: auto;
   }
-  .profile-statement{
+  .profile-statement {
     margin: 5rem 0 0;
     font-size: 2vw;
   }
 }
 
 @media (479px < width < 770px) {
-.about-me{
+  .about-me {
     margin: 0;
   }
-  .profile{
+  .profile {
     padding: 0;
     margin: -8rem 0 0;
   }
-  .me-image{
+  .me-image {
     height: 25rem;
     width: auto;
   }
-  .profile-statement{
+  .profile-statement {
     margin: 9rem 0 0;
     font-size: 2vw;
   }
 }
 
 @media (769px < width < 1025px) {
-  .about-me{
+  .about-me {
     margin: 0;
   }
-  .profile{
+  .profile {
     padding: 0;
     margin: 0;
   }
-  .me-image{
+  .me-image {
     height: 28rem;
     width: auto;
   }
-  .profile-statement{
+  .profile-statement {
     margin: 9rem 0 0;
     font-size: 1.75vw;
   }
 }
 
 @media (1024px < width < 1441px) {
-  .about-me{
+  .about-me {
     margin: 0;
   }
-  .profile{
+  .profile {
     padding: 0;
     margin: -12rem 0 0;
   }
-  .me-image{
+  .me-image {
     height: 35rem;
     width: auto;
   }
-  .profile-statement{
+  .profile-statement {
     margin: 15rem 0 0;
     font-size: 1.5vw;
   }

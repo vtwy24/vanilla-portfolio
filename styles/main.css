@@ -25,7 +25,7 @@
   font-size: 2em;
 }
 
-li {
+.nav-theme-switch {
   display: flex;
   align-items: center;
 }
@@ -34,6 +34,11 @@ li {
   text-decoration: none;
   color: white;
   transition: color 0.3s;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
 }
 
 .nav-links a:hover {
