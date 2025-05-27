@@ -6,12 +6,18 @@
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #222;
   color: white;
   padding: 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .title-link {
@@ -101,7 +107,7 @@ body.light-mode .knob {
 }
 
 .subtitle {
-  margin: -2rem 0 -10rem 0;
+  margin: 3rem 0 -10rem 0;
   font-size: 15rem;
   text-align: center;
   color: #a2a2a293;
